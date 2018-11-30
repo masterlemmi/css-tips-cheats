@@ -4,3 +4,7 @@ uSINg REM
 SAss
 -install globally
 -compile with sass --watch style.scss output.css
+
+LIVE SERVER
+-npm install -g live-server
+-usage=> go to folder to host, and call live-server from terminal
