@@ -11,6 +11,10 @@ html {
 }
 
 body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fff;
   box-sizing: border-box;
 }
 
@@ -50,19 +54,13 @@ body {
     transform: translate(0);
   }
 }
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-}
-
 .heading-primary {
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
+
 .heading-primary--main {
   display: block;
   font-size: 6rem;
@@ -76,6 +74,7 @@ body {
       animation-iteration-count: 3;
       */
 }
+
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
@@ -95,11 +94,42 @@ body {
   letter-spacing: 0.2rem;
   transition: all 0.2s;
 }
+
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 3.5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*position is not centered so move actual image 50 % to left and to top*/
+  text-align: center;
+}
+
+/* :link -> psudeo classes - state of an element (e.g. hover, clicked, link, etc..) */
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -110,31 +140,29 @@ body {
   position: relative;
   font-size: 1.6rem;
 }
+
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-.btn:hover::after {
-  transform: scaleX(1.5) scaleY(1.5);
-  opacity: 0;
-}
+
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
+
 .btn--white {
   background-color: #fff;
   color: #777;
 }
-.btn--white::after {
-  background-color: white;
-}
+
 .btn::after {
   /*	goes behind existing button*/
   content: "taeza";
   display: inline-block;
   height: 100%;
   width: 100%;
+  background-color: black;
   border-radius: 10rem;
   position: absolute;
   top: 0;
@@ -142,40 +170,20 @@ body {
   z-index: -1;
   transition: all 0.4s;
 }
+
+.btn--white::after {
+  background-color: white;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.5) scaleY(1.5);
+  opacity: 0;
+}
+
 .btn--animated {
   animation: moveInBottom 1s ease-out 0.75s;
   animation-fill-mode: backwards;
   /*style will be set for the 0% before animation start*/
 }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(85, 197, 122, 0.8)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-.header__logo {
-  height: 3.5rem;
-}
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /*position is not centered so move actual image 50 % to left and to top*/
-  text-align: center;
-}
-
-.row {
-  max-width: 114 rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
