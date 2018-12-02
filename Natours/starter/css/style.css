@@ -100,6 +100,41 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -175,7 +210,23 @@ body {
 }
 
 .row {
-  max-width: 114 rem;
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem)/2);
+  float: left;
+}
+.row .col-1-of-2:not(:last-child) {
+  margin-right: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

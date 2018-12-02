@@ -8,3 +8,48 @@ SAss
 LIVE SERVER
 -npm install -g live-server
 -usage=> go to folder to host, and call live-server from terminal
+
+
+CENTERING A BLOCK ELEMENT
+margin: 0 auto; //left and right is set by browser automaticallly
+
+SHOWING BACKGROUND removed because of floating content
+clearfix hack:
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+NOT PSEUDO SSELECTOR
+-select everything except the one indicated inside paren
+e.g. &:not(:last-child){
+	//applies the style to everything except last-child
+	margin-bottom: 40px;
+}
+
+SASS OPERATIONS
+calc - allows mixed units (rem, pixels, etc..)
+e.g. width: calc(100%- #{$gutter-horizontal})/2);
+
+ATTR SELECTOR
+[class^="col-"] {
+	//apply style to only elements whose class name starts with col
+}
+
+MAIN element. - tells search engines that this part is the main part of the site
+
+EMMET EXTENSION
+-write html shortcut
+-.className + tab = creates div with clas name
+-section.classname + tab = creates section elment with classname
+
+
+WEBKIT
+-webkit-background-clip: text;
+clip background to where text is. if text set to transparent background is seen.
+
+FILLTER TEXT
+-LOREM + tab
+
+codingheroes.io/resources/
