@@ -53,3 +53,8 @@ FILLTER TEXT
 -LOREM + tab
 
 codingheroes.io/resources/
+
+
+
+anchor DISPlAY-INLINEBLOCK
+-allows box model properties (padding margin etc..)
