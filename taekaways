@@ -58,3 +58,10 @@ codingheroes.io/resources/
 
 anchor DISPlAY-INLINEBLOCK
 -allows box model properties (padding margin etc..)
+
+
+REsponsiVE DESIGN TIPS
+-Image Width set to percentage if possible so it scales with viewport
+
+    //composition:hover composition_photo: not(;hovered);
+-translation: when you hover over the omposition class. select the composition photo that is not hovered. 
