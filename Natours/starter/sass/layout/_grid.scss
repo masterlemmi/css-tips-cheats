@@ -18,4 +18,15 @@
 
         }
     }
+
+    .col-1-of-4 {
+       
+        width: calc((100% - #{$gutter-horizontal})/4);
+        float: left;
+
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+
+        }
+    }
 }
