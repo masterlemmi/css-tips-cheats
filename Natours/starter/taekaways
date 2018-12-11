@@ -65,3 +65,9 @@ REsponsiVE DESIGN TIPS
 
     //composition:hover composition_photo: not(;hovered);
 -translation: when you hover over the omposition class. select the composition photo that is not hovered. 
+
+
+
+DIRECT child
+e.g. .section-features > *  
+all children ==> .section-features *
