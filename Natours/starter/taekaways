@@ -48,6 +48,10 @@ EMMET EXTENSION
 WEBKIT
 -webkit-background-clip: text;
 clip background to where text is. if text set to transparent background is seen.
+webkit allows it to work in other browser like chrome/safari
+-webkit
+
+
 
 FILLTER TEXT
 -LOREM + tab
@@ -71,3 +75,18 @@ REsponsiVE DESIGN TIPS
 DIRECT child
 e.g. .section-features > *  
 all children ==> .section-features *
+
+
+HIDE BACK OF ELEMENT
+backface-visibility: hidden;
+
+
+BOX-DEcORATION-BREAK: CLonE
+clone-apply all text decorations we have to all the boxes created by the element
+
+FIGURE element
+allows adding an immage with a caption
+
+SHAPE-OUTSIDE
+allows circle(figures) in div);
+-must be floated must have defined height and width;
