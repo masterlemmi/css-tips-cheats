@@ -78,8 +78,9 @@ all children ==> .section-features *
 
 
 HIDE BACK OF ELEMENT
-backface-visibility: hidden;
-
+-backface-visibility: hidden;
+-also fix for shaking bug
+-usually fixes some werid thing that hapens with transofmrs
 
 BOX-DEcORATION-BREAK: CLonE
 clone-apply all text decorations we have to all the boxes created by the element
@@ -90,3 +91,20 @@ allows adding an immage with a caption
 SHAPE-OUTSIDE
 allows circle(figures) in div);
 -must be floated must have defined height and width;
+
+
+&:hover &__caption 
+as soon as story is hovered.. you want to change the caption class
+
+filters: blur(3px);
+
+video element. allows embedding vdieos
+<video autoplay muted loop class="bg-video__content">
+					<source src="img/video.mp4" type="video/mp4"/>
+					<source src="img/video.webm" type="video/webm"/>
+					Your browser is not supported
+				</video>
+
+                        object-fit: cover; //similiar to background size cover
+                        fill entire parent but still maintaning its ratio. part that didn't fit will 
+                        simplby be clipped off
